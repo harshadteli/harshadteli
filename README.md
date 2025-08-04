@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Harshad Teli</h1>
 <h3 align="center">A passionate Software Developer from India</h3>
 
-- 🔭 I’m currently working on **New College Website for B.C.S Department**
+- 🔭 I’m currently working on **New Horizon(State Level Competition) Registration system for B.C.S Department at The New College Kolhapur**
 
 - 🌱 I’m currently learning **Java,Python,C#,.Net,Php**
 
@@ -43,5 +43,6 @@
 
   ## 💰 You can help me by Donating
   [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/harshadteli)
+
 
 
