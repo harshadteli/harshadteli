@@ -23,7 +23,7 @@
 
 [![Contact](https://img.shields.io/badge/Contact%20Form-Submit-blue?style=for-the-badge&logo=maildotru)](https://harshadteli.github.io/contactharshadteli/)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-121212?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://harshadteli.github.io/harshadteliportfolio/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-121212?style=for-the-badge&logo=aboutdotme&logoColor=white)](https://harshadteli.github.io/harshadteli-Portfolio/)
 </p>
 
 
@@ -43,6 +43,7 @@
 
   ## 💰 You can help me by Donating
   [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/harshadteli)
+
 
 
 
