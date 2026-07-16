@@ -1,0 +1,36 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment files
+.env
+.env.*
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated output artifacts
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.html
+
+# Local test / temp files
+*.log
+*.tmp
+*.bak
