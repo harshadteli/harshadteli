@@ -29,7 +29,7 @@ PHRASES = ["Software Developer","Full Stack Engineer","AI Enthusiast","Open Sour
 # Safe pixel widths for font-size 22 / weight 600 (Inter/Segoe) + padding so nothing clips
 PHRASE_WIDTHS = [255, 250, 175, 330, 265]
 SKILLS = ["Java","Python","C#",".NET","JavaScript","PHP","HTML/CSS","Docker","Postgres","MongoDB","Git","MySQL"]
-NAME="Harshad Teli"; LOC="Kolhapur, India"; EDU="B.C.S · The New College"; FOCUS="New Horizon · AI Tech"; PORT="harshadteli.github.io"; EMAIL="harshadteli697@gmail.com"
+NAME="Harshad Teli"; LOC="Kolhapur, India"; EDU="B.C.S, M.C.A"; FOCUS="Software Engineer and AI Developer"; PORT="https://harshadteli.onrender.com"; EMAIL="harshadteli697@gmail.com"
 
 def fmt_kt(*times):
     """Strictly increasing keyTimes in [0, 1] (SVG rejects duplicates)."""
