@@ -25,11 +25,12 @@ def load_photo_data_uri():
 
 PHOTO_URI = load_photo_data_uri()
 
-PHRASES = ["Software Developer","Full Stack Engineer","AI Enthusiast","Open Source Contributor","Java · Python · .NET"]
+PHRASES = ["Software Engineer","AI Developer","Full Stack & AI Engineer","Machine Learning","Java · Python · PyTorch"]
 # Safe pixel widths for font-size 22 / weight 600 (Inter/Segoe) + padding so nothing clips
-PHRASE_WIDTHS = [255, 250, 175, 330, 265]
-SKILLS = ["Java","Python","C#",".NET","JavaScript","PHP","HTML/CSS","Docker","Postgres","MongoDB","Git","MySQL"]
-NAME="Harshad Teli"; LOC="Kolhapur, India"; EDU="B.C.S, M.C.A"; FOCUS="Software Engineer and AI Developer"; PORT="https://harshadteli.onrender.com"; EMAIL="harshadteli697@gmail.com"
+PHRASE_WIDTHS = [230, 160, 300, 210, 270]
+SKILLS = ["Java", "Python", "C#", ".NET", "TypeScript", "React", "PyTorch", "FastAPI", "Docker", "Postgres", "LLMs & AI", "Git"]
+NAME="Harshad Teli"; LOC="Kolhapur, India"; EDU="B.C.S, M.C.A (Master in Computer Applications)"; FOCUS="Software Engineer & AI Developer"; PORT="harshadteli.github.io"; EMAIL="harshadteli697@gmail.com"
+GITHUB="github.com/harshadteli"; STATUS="Open to Collaboration"
 
 def fmt_kt(*times):
     """Strictly increasing keyTimes in [0, 1] (SVG rejects duplicates)."""
@@ -47,8 +48,8 @@ def fmt_kt(*times):
         prev = t
     return ";".join(out)
 
-DARK = dict(bg="#030712",panel="#0F172A",border="rgba(255,255,255,0.08)",text="#F8FAFC",muted="#94A3B8",dim="#64748B",a1="#7C3AED",a2="#22D3EE",a3="#10B981",as1="#22D3EE",as2="#A78BFA",as3="#7C3AED",gc="#22D3EE",gv="#7C3AED",ge="#10B981",gb="#3B82F6",tbar="#0B1220",dr="#F87171",dy="#FBBF24",dg="#34D399",pbg="rgba(124,58,237,0.12)",pbd="rgba(34,211,238,0.25)",noise="0.045",glass="0.07",part="#22D3EE",scan="rgba(34,211,238,0.07)",icon="#94A3B8",prompt="#22D3EE")
-LIGHT = dict(bg="#FFFFFF",panel="#F8FAFC",border="rgba(15,23,42,0.08)",text="#0F172A",muted="#475569",dim="#64748B",a1="#2563EB",a2="#06B6D4",a3="#10B981",as1="#2563EB",as2="#06B6D4",as3="#0EA5E9",gc="#06B6D4",gv="#2563EB",ge="#10B981",gb="#3B82F6",tbar="#F1F5F9",dr="#EF4444",dy="#F59E0B",dg="#10B981",pbg="rgba(37,99,235,0.08)",pbd="rgba(6,182,212,0.28)",noise="0.028",glass="0.5",part="#2563EB",scan="rgba(37,99,235,0.055)",icon="#475569",prompt="#2563EB")
+DARK = dict(bg="#080b11",panel="#0f1420",border="rgba(255,255,255,0.08)",text="#F8FAFC",muted="#94A3B8",dim="#64748B",a1="#8b5cf6",a2="#06b6d4",a3="#6366f1",as1="#06b6d4",as2="#a78bfa",as3="#8b5cf6",gc="#06b6d4",gv="#8b5cf6",ge="#6366f1",gb="#3b82f6",tbar="#0a0d16",dr="#F87171",dy="#FBBF24",dg="#34D399",pbg="rgba(139,92,246,0.1)",pbd="rgba(6,182,212,0.2)",noise="0.045",glass="0.07",part="#06b6d4",scan="rgba(6,182,212,0.07)",icon="#94A3B8",prompt="#06b6d4")
+LIGHT = dict(bg="#FFFFFF",panel="#F8FAFC",border="rgba(15,23,42,0.08)",text="#0F172A",muted="#475569",dim="#64748B",a1="#4F46E5",a2="#06B6D4",a3="#4F46E5",as1="#4F46E5",as2="#06B6D4",as3="#0ea5e9",gc="#06B6D4",gv="#4F46E5",ge="#10B981",gb="#3B82F6",tbar="#F1F5F9",dr="#EF4444",dy="#F59E0B",dg="#10B981",pbg="rgba(79,70,229,0.06)",pbd="rgba(6,182,212,0.2)",noise="0.028",glass="0.5",part="#4F46E5",scan="rgba(79,70,229,0.055)",icon="#475569",prompt="#4F46E5")
 
 def esc(s):
     return s.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
@@ -141,12 +142,12 @@ def build(tid, t):
         A('</rect></g>')
     A('</g>')
     A('<g transform="translate(0, 118)">')
-    rows=[("Location",LOC),("Education",EDU),("Focus",FOCUS),("Portfolio",PORT),("Email",EMAIL)]
+    rows=[("Location",LOC),("Education",EDU),("Focus",FOCUS),("Portfolio",PORT),("Email",EMAIL),("GitHub",GITHUB),("Status",STATUS)]
     for i,(label,value) in enumerate(rows):
-        y=i*26; delay=3.0+i*0.35
-        A('<g transform="translate(0,'+str(y)+')" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.45s" begin="'+("%.2f"%delay)+'s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="0 '+str(y+10)+'" to="0 '+str(y)+'" dur="0.45s" begin="'+("%.2f"%delay)+'s" fill="freeze"/><text x="0" y="0" fill="'+t["dim"]+'" font-family="JetBrains Mono,Consolas,monospace" font-size="12">'+esc(label)+'</text><text x="100" y="0" fill="'+t["muted"]+'" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="500">'+esc(value)+'</text></g>')
+        y=i*22; delay=3.0+i*0.25
+        A('<g transform="translate(0,'+str(y)+')" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="'+("%.2f"%delay)+'s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="0 '+str(y+8)+'" to="0 '+str(y)+'" dur="0.4s" begin="'+("%.2f"%delay)+'s" fill="freeze"/><text x="0" y="0" fill="'+t["dim"]+'" font-family="JetBrains Mono,Consolas,monospace" font-size="12">'+esc(label)+'</text><text x="115" y="0" fill="'+t["muted"]+'" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="500">'+esc(value)+'</text></g>')
     A('</g>')
-    A('<g transform="translate(0, 268)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.6s" fill="freeze"/><text x="0" y="0" fill="'+t["dim"]+'" font-family="JetBrains Mono,Consolas,monospace" font-size="11" letter-spacing="1.2">SKILLS</text><g transform="translate(0, 24)">')
+    A('<g transform="translate(0, 280)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.6s" fill="freeze"/><text x="0" y="0" fill="'+t["dim"]+'" font-family="JetBrains Mono,Consolas,monospace" font-size="11" letter-spacing="1.2">SKILLS</text><g transform="translate(0, 24)">')
     x=y=0; gap_x=8; gap_y=10; row_h=30; max_w=620; pad_x=12
     for i,skill in enumerate(SKILLS):
         tw=len(skill)*6.8+pad_x*2
@@ -156,7 +157,7 @@ def build(tid, t):
         A('<g transform="translate('+str(x)+','+str(y)+')" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="'+("%.2f"%delay)+'s" fill="freeze"/><g><animateTransform attributeName="transform" type="scale" values="1;1.045;1" dur="'+("%.1f"%(2.8+(i%5)*0.35))+'s" begin="'+("%.2f"%(delay+0.5))+'s" repeatCount="indefinite" additive="sum"/><rect x="0" y="-14" width="'+("%.1f"%tw)+'" height="28" rx="14" fill="'+t["pbg"]+'" stroke="'+t["pbd"]+'" stroke-width="1" filter="url(#'+tid+'-pillGlow)"><animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="'+("%.1f"%(2.4+(i%4)*0.4))+'s" begin="'+("%.2f"%delay)+'s" repeatCount="indefinite"/></rect><text x="'+("%.1f"%(tw/2))+'" y="2" text-anchor="middle" fill="'+t["text"]+'" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="500">'+esc(skill)+'</text></g></g>')
         x+=tw+gap_x
     A('</g></g>')
-    A('<g transform="translate(0, 380)"><text x="0" y="0" fill="'+t["dim"]+'" opacity="0" font-family="JetBrains Mono,Consolas,monospace" font-size="11" letter-spacing="1.2">CONNECT<animate attributeName="opacity" values="0;1" dur="0.4s" begin="6.0s" fill="freeze"/></text><g transform="translate(0, 18)">')
+    A('<g transform="translate(0, 396)"><text x="0" y="0" fill="'+t["dim"]+'" opacity="0" font-family="JetBrains Mono,Consolas,monospace" font-size="11" letter-spacing="1.2">CONNECT<animate attributeName="opacity" values="0;1" dur="0.4s" begin="6.0s" fill="freeze"/></text><g transform="translate(0, 18)">')
     gh='<path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.8c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .26.18.58.69.48A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" fill="currentColor"/>'
     li='<path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zm7.5 0h3.8v2h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.07V23h-4v-6.7c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.54V23h-4V8.5z" fill="currentColor"/>'
     yt='<path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z" fill="currentColor"/>'
