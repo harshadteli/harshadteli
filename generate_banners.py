@@ -26,23 +26,23 @@ ASCII_LINES = [
 ]
 
 TYPING_PHRASES = [
-    "Software Developer",
-    "Full Stack Engineer",
-    "AI Enthusiast",
-    "Open Source Contributor",
-    "Java · Python · .NET",
+    "Software Engineer",
+    "AI Developer",
+    "Full Stack & AI Engineer",
+    "Machine Learning",
+    "Java · Python · PyTorch",
 ]
 
 SKILLS = [
-    "Java", "Python", "C#", ".NET", "JavaScript", "PHP",
-    "HTML/CSS", "Docker", "Postgres", "MongoDB", "Git", "MySQL",
+    "Java", "Python", "C#", ".NET", "TypeScript", "React",
+    "PyTorch", "FastAPI", "Docker", "Postgres", "LLMs & AI", "Git",
 ]
 
 NAME = "Harshad Teli"
 LOCATION = "Kolhapur, India"
-EDUCATION = "B.C.S,M.C.A"
-FOCUS = "Software Enginner and AI Developer"
-PORTFOLIO = "https://harshadteli.onrender.com"
+EDUCATION = "B.C.S, M.C.A (Master in Computer Applications)"
+FOCUS = "Software Engineer & AI Developer"
+PORTFOLIO = "harshadteli.github.io"
 EMAIL = "harshadteli697@gmail.com"
 
 THEMES = {
