@@ -40,9 +40,9 @@ SKILLS = [
 
 NAME = "Harshad Teli"
 LOCATION = "Kolhapur, India"
-EDUCATION = "B.C.S · The New College"
-FOCUS = "New Horizon · AI Tech"
-PORTFOLIO = "harshadteli.github.io"
+EDUCATION = "B.C.S,M.C.A"
+FOCUS = "Software Enginner and AI Developer"
+PORTFOLIO = "https://harshadteli.onrender.com"
 EMAIL = "harshadteli697@gmail.com"
 
 THEMES = {
