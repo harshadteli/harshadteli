@@ -79,7 +79,7 @@
             </a>
           </marquee>
         </td>
-      </tr>
+      </tr><br>
       <tr>
          <td align="center" valign="top" width="48%" style="padding-left:10px;">
           <marquee direction="left" scrollamount="3" width="100%">
