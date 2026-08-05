@@ -80,6 +80,19 @@
           </marquee>
         </td>
       </tr>
+      <tr>
+         <td align="center" valign="top" width="48%" style="padding-left:10px;">
+          <marquee direction="left" scrollamount="3" width="100%">
+            <img src="https://via.placeholder.com/360x220?text=AI+%26+ML+Certification" alt="AI & ML Certification" width="320" />
+            <br/>
+            <strong>AI & ML Certification</strong>
+            <br/>
+            <a href="https://example.com/verify-ai-ml-certification" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.shields.io/badge/Verify%20Now-Google-blue?style=for-the-badge&logo=google&logoColor=white" alt="Verify Now" />
+            </a>
+          </marquee>
+        </td>
+      </tr>
     </table>
   </marquee>
 </p>
