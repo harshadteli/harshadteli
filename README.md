@@ -71,6 +71,20 @@
       <a href="https://example.com/verify-ai-ml-certification" target="_blank" rel="noopener noreferrer">Verify Now</a>
     </td>
     <tr>
+     <td align="center" valign="top" width="50%">
+      <img src="https://harshadteli.github.io/Certificates/CIMAGES/geemini.jpg" alt="GOOGLE GEMINI EXAM 2026" width="320" />
+      <br />
+      <strong>GOOGLE GEMINI EXAM 2026</strong>
+      <br />
+      <a href="https://drive.google.com/file/d/1EORhfT45lrhrFelge6GpRJnkoxrKLU9X/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Verify Now</a>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <img src="https://via.placeholder.com/360x220?text=AI+%26+ML+Certification" alt="AI & ML Certification" width="320" />
+      <br />
+      <strong>AI & ML Certification</strong>
+      <br />
+      <a href="https://example.com/verify-ai-ml-certification" target="_blank" rel="noopener noreferrer">Verify Now</a>
+    </td>
       
   </tr>
 </table>
